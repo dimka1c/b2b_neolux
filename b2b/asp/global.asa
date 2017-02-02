@@ -1,0 +1,11 @@
+<SCRIPT LANGUAGE=V7Script RUNAT=Server>
+Процедура Session_OnStart()
+    WebНачатьСессию(Session.SessionID, "udt_session");
+КонецПроцедуры
+
+Процедура Session_OnEnd()
+    WebЗавершитьСессию(Session.SessionID);
+КонецПроцедуры
+
+</SCRIPT>
+
